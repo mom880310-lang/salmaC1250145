@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deym</title>
+</head>
+<body>
+    <script>
+    //     let gaess=Number(prompt("guess anumber"));
+    
+    //     while(gaess !==7)
+    //     console.log('wrong gaess, try again')
+    // guess=Number(prompt("gaess again"))
+        
+        // class work
+    let guess = Number(prompt("Guess a number:"));
+let attempts = 1;
+
+while (guess !== 10) {
+    if (guess > 10) {
+        console.log("Too high");
+    } else if (guess < 10) {
+        console.log("Too low");
+    }
+    attempts++;
+    guess = Number(prompt("Guess again:"));
+}
+
+console.log("Correct guess!");
+console.log(`You made ${attempts} attempts.`);
+</script>
+</body>
+</html>
